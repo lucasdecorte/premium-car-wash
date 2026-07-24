@@ -1,0 +1,1381 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background:#080808;
+    color:white;
+}
+
+
+/* ================= HEADER ================= */
+
+
+.header{
+
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 8%;
+
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(12px);
+
+}
+
+
+
+.logo{
+
+    font-size:25px;
+    font-weight:700;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:white;
+
+}
+
+
+
+.logo i{
+
+    color:#00aaff;
+
+}
+
+
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+
+    font-size:15px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#00aaff;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+    height:100vh;
+    width:100%;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+
+.hero-fondo{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("img/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-fondo::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.35)
+    );
+
+}
+
+
+
+.hero-contenido{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-left:8%;
+
+    max-width:650px;
+
+}
+
+
+
+.hero-contenido span{
+
+    color:#00aaff;
+
+    font-size:16px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+
+
+.hero-contenido h1{
+
+    font-size:70px;
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+    font-weight:800;
+
+}
+
+
+
+.hero-contenido p{
+
+    color:#d0d0d0;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    max-width:550px;
+
+}
+
+
+
+
+.btn-principal{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 40px;
+
+    background:#00aaff;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-principal:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #00aaff;
+
+}
+
+
+
+
+
+/* ================= ESTADISTICAS ================= */
+
+
+.estadisticas{
+
+    width:85%;
+
+    margin:-60px auto 80px;
+
+    position:relative;
+
+    z-index:5;
+
+    background:#111;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+
+
+.estadistica{
+
+    text-align:center;
+
+}
+
+
+
+.estadistica h2{
+
+    font-size:45px;
+
+    color:#00aaff;
+
+}
+
+
+
+.estadistica p{
+
+    color:#bbb;
+
+}
+
+
+
+
+
+
+
+/* ================= TITULOS ================= */
+
+
+.titulo-seccion{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.titulo-seccion span{
+
+    color:#00aaff;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+
+
+.titulo-seccion h2{
+
+    font-size:42px;
+
+    margin:15px 0;
+
+}
+
+
+
+.titulo-seccion p{
+
+    color:#aaa;
+
+}
+
+
+
+
+
+
+
+/* ================= SERVICIOS ================= */
+
+
+.servicios{
+
+    padding:100px 8%;
+
+}
+
+
+
+.servicios-contenedor{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.tarjeta-servicio{
+
+    width:380px;
+
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+
+
+.tarjeta-servicio:hover{
+
+    transform:translateY(-15px);
+
+}
+
+
+
+.tarjeta-servicio img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+
+
+.servicio-info{
+
+    padding:30px;
+
+}
+
+
+
+.servicio-info h3{
+
+    font-size:28px;
+
+}
+
+
+
+.servicio-info h4{
+
+    color:#00aaff;
+
+    font-size:35px;
+
+    margin:15px 0;
+
+}
+
+
+
+.servicio-info ul{
+
+    list-style:none;
+
+    color:#ccc;
+
+    line-height:2;
+
+}
+
+
+
+.boton-interesa{
+
+    display:block;
+
+    margin-top:25px;
+
+    text-align:center;
+
+    padding:14px;
+
+    background:#e60000;
+
+    border-radius:30px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.boton-interesa:hover{
+
+    background:#ff3333;
+
+    transform:scale(1.05);
+
+}
+
+/* ================= POR QUÉ ELEGIRNOS ================= */
+
+
+.porque{
+
+    padding:100px 8%;
+
+    background:#0d0d0d;
+
+}
+
+
+
+.beneficios{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.beneficio{
+
+    background:#111;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+
+
+.beneficio:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00aaff;
+
+}
+
+
+
+.beneficio i{
+
+    font-size:40px;
+
+    color:#00aaff;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.beneficio h3{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.beneficio p{
+
+    color:#aaa;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* ================= GALERÍA ================= */
+
+
+.galeria{
+
+    padding:100px 8%;
+
+}
+
+
+
+.galeria-contenedor{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.galeria-contenedor img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+
+
+.galeria-contenedor img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ================= OPINIONES ================= */
+
+
+.opiniones{
+
+    padding:100px 8%;
+
+    background:#0d0d0d;
+
+}
+
+
+
+.opiniones-contenedor{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.opinion{
+
+    background:#111;
+
+    width:330px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+
+
+.estrellas{
+
+    color:#ffd700;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.opinion p{
+
+    color:#ccc;
+
+    line-height:1.7;
+
+    font-style:italic;
+
+}
+
+
+
+.opinion h3{
+
+    margin-top:20px;
+
+    color:#00aaff;
+
+}
+
+
+
+
+
+
+
+/* ================= FAQ ================= */
+
+
+.faq{
+
+    padding:100px 8%;
+
+}
+
+
+
+.faq-contenedor{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.pregunta{
+
+    background:#111;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+}
+
+
+
+.pregunta h3{
+
+    margin-bottom:10px;
+
+}
+
+
+
+.pregunta p{
+
+    color:#aaa;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+
+
+/* ================= CONTACTO ================= */
+
+
+.contacto{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+
+    120deg,
+
+    #111,
+
+    #050505
+
+    );
+
+}
+
+
+
+.contacto-contenido span{
+
+    color:#00aaff;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.contacto h2{
+
+    font-size:45px;
+
+    margin:20px 0;
+
+}
+
+
+
+.contacto p{
+
+    color:#aaa;
+
+    font-size:18px;
+
+}
+
+
+
+.btn-whatsapp{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:30px;
+
+    padding:16px 40px;
+
+    background:#25d366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-whatsapp:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* ================= WHATSAPP FLOTANTE ================= */
+
+
+.whatsapp-flotante{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25d366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:35px;
+
+    z-index:999;
+
+    box-shadow:0 0 20px rgba(37,211,102,.5);
+
+    transition:.3s;
+
+}
+
+
+
+.whatsapp-flotante:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    background:#050505;
+
+    padding:50px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.footer-logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+
+
+.footer-logo i{
+
+    color:#00aaff;
+
+}
+
+
+
+footer p{
+
+    color:#aaa;
+
+    margin:20px 0;
+
+}
+
+
+
+.redes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.redes a{
+
+    color:white;
+
+    font-size:25px;
+
+    transition:.3s;
+
+}
+
+
+
+.redes a:hover{
+
+    color:#00aaff;
+
+}
+
+
+
+.copyright{
+
+    margin-top:30px;
+
+    color:#666;
+
+}
+
+
+/* ================= ANIMACIONES ================= */
+
+
+.hero-contenido{
+
+    animation:aparecer 1.2s ease;
+
+}
+
+
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* Efecto brillo botones */
+
+
+.boton-interesa,
+.btn-principal,
+.btn-whatsapp{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.boton-interesa::before,
+.btn-principal::before,
+.btn-whatsapp::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transition:.5s;
+
+}
+
+
+
+.boton-interesa:hover::before,
+.btn-principal:hover::before,
+.btn-whatsapp:hover::before{
+
+
+    left:100%;
+
+}
+
+
+
+
+
+/* ================= RESPONSIVE TABLET ================= */
+
+
+@media(max-width:1000px){
+
+
+
+    nav{
+
+        gap:15px;
+
+    }
+
+
+
+    nav a{
+
+        font-size:13px;
+
+    }
+
+
+
+    .hero-contenido h1{
+
+        font-size:55px;
+
+    }
+
+
+
+    .beneficios{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    .galeria-contenedor{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE CELULAR ================= */
+
+
+@media(max-width:700px){
+
+
+
+    .header{
+
+        padding:20px 5%;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+
+    nav a{
+
+        font-size:12px;
+
+    }
+
+
+
+    .hero{
+
+        height:90vh;
+
+    }
+
+
+
+    .hero-contenido{
+
+        margin:0 5%;
+
+        text-align:center;
+
+    }
+
+
+
+    .hero-contenido h1{
+
+        font-size:42px;
+
+    }
+
+
+
+    .hero-contenido p{
+
+        font-size:15px;
+
+    }
+
+
+
+    .estadisticas{
+
+        width:90%;
+
+        flex-direction:column;
+
+        gap:30px;
+
+        margin-top:-40px;
+
+    }
+
+
+
+    .estadistica h2{
+
+        font-size:38px;
+
+    }
+
+
+
+    .titulo-seccion h2{
+
+        font-size:32px;
+
+    }
+
+
+
+    .servicios{
+
+        padding:70px 5%;
+
+    }
+
+
+
+    .tarjeta-servicio{
+
+        width:100%;
+
+    }
+
+
+
+    .beneficios{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .galeria-contenedor{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .galeria-contenedor img{
+
+        height:250px;
+
+    }
+
+
+
+    .opiniones{
+
+        padding:70px 5%;
+
+    }
+
+
+
+    .opinion{
+
+        width:100%;
+
+    }
+
+
+
+    .contacto h2{
+
+        font-size:32px;
+
+    }
+
+
+
+    footer{
+
+        padding:40px 5%;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ================= SCROLL SUAVE Y DETALLES ================= */
+
+
+::selection{
+
+    background:#00aaff;
+
+    color:white;
+
+}
+
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+    background:#050505;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#00aaff;
+
+    border-radius:10px;
+
+}
+
+
+
+
+/* Elementos preparados para animación JS */
+
+
+.animar{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+
+
+.animar.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
